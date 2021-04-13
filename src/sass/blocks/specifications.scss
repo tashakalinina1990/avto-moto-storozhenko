@@ -1,0 +1,25 @@
+.specifications {
+	width: 565px;
+	margin-top: 11px;
+}
+
+.specifications__row {
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+
+	margin-top: 10px;
+	line-height: 40px;
+
+	&::after {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 100%;
+		height: 1px;
+		bottom: 0;
+		left: 0;
+
+		background-color: #D7D9DF;
+	}
+}

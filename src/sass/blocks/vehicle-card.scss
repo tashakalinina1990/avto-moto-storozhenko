@@ -1,0 +1,162 @@
+.vehicle-card {
+	min-width: 1024px;
+	max-width: 1220px;
+	margin: 0 auto;
+	margin-top: 74px;
+	padding: 0 20px;
+
+	box-sizing: border-box;
+}
+
+.vehicle-main {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 84px;
+}
+
+.vehicle-card__info {
+	margin-left: 53px;
+}
+
+.vehicle-card__title {
+	margin: 0;
+	margin-left: 3px;
+
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 41px;
+	color: #48494D;
+}
+
+.vehicle-card__specifications {
+	display: flex;
+	padding: 0;
+	margin-top: 21px;
+	margin-bottom: 2px;
+	margin-left: 3px;
+
+	list-style: none;
+}
+
+.vehicle-card__specifications-item {
+	position: relative;
+	min-width: 70px;
+	padding-right: 7px; 
+	padding-top: 40px;
+
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: rgba(72, 73, 77, 0.5);
+	text-align: center;
+
+	&::after {
+		position: absolute;
+		content: "";
+		display: block;
+		width: 40px;
+		height: 40px;
+		top: calc(50% - 31px);
+		left: calc(50% - 23px);
+	}
+
+	&--engine-type::after {
+		left: calc(50% - 30px);
+		background-image: url("../../images/engine_type.svg");
+	}
+
+	&--horsepower::after {
+		background-image: url("../../images/horsepower.svg");
+	}
+
+	&--gearbox::after {
+		background-image: url("../../images/gearbox.svg");
+	}
+
+	&--engine-volume::after {
+		background-image: url("../../images/engine_volume.svg");
+	}
+}
+
+.vehicle-card__price {
+	display: flex;
+	margin-left: 3px;
+	margin-bottom: 2px;
+}
+
+.vehicle-card__discount-price {
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 48px;
+
+	color: #48494D;
+}
+
+.vehicle-card__full-price {
+	position: relative;
+	margin-left: 35px;
+	margin-top: 47px;
+
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	color: rgba(72, 73, 77, 0.5);
+
+	&::after {
+		position: absolute;
+		content: "";
+		display: block;
+
+		width: 123.5px;
+		height: 1px;
+		top: 12px;
+		left: -4px;
+
+		background-color: #A3A4A6;
+		transform: rotate(-5deg);
+	}
+}
+
+.vehicle-card__request-button {
+	display: block;
+	width: 196px;
+	padding: 16.5px 0;
+	margin-bottom: 16px;
+
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+
+	background: #D12136;
+
+	&:hover {
+		background: #BD0C21;
+	}
+
+}
+
+.vehicle-card__credit-button {
+	display: block;
+	width: 222px;
+	padding: 15.5px 0;
+
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: #D12136;
+
+	border: 1px solid #D12136;
+	box-sizing: border-box;
+
+	&:hover {
+		color: #fff;
+		background: #D12136;
+	}
+}

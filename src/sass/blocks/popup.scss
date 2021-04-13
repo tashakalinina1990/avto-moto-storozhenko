@@ -1,0 +1,200 @@
+.popup__overlay {
+	display: flex;
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(88, 87, 87, 0.6);
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+}
+
+.popup {
+	position: fixed;
+
+	width: 698px;
+	height: 415px;
+	padding: 35px;
+
+	background: #F5F5F9;
+	box-sizing: border-box;
+}
+
+.popup__close-button {
+	position: absolute;
+
+	right: 25px;
+	top: 25px;
+	padding: 0;
+
+	width: 15px;
+	height: 15px;
+
+	border: none;
+	background: none;
+
+	&::after {
+		content: "";
+		display: block;
+
+		width: 15px;
+		height: 15px;
+
+		background-image: url("../../images/cross.svg")
+	}
+}
+
+.popup__title {
+	margin-top: -5px;
+
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 34px;
+	color: #48494D;
+	text-align: center;
+	flex-grow: 2;
+}
+
+.popup__fields {
+	display: flex;
+	
+	height: 217px;
+	padding-top: 22px;
+	
+	align-content: baseline;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.popup__input {
+	width: 300px;
+	height: 50px;
+
+	margin-bottom: 16px;
+	margin-right: 27px;
+	padding-left: 24px;
+
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	color: #48494D;
+
+	border: 1px solid rgba(72, 73, 77, 0.2);
+	box-sizing: border-box;
+}
+
+.popup__required-field--invalid {
+	border: 1px solid #FF0000;
+
+	&:focus {
+			outline: 0;
+	}
+}
+
+.popup__required-field-wrapper {
+	position: relative;
+	
+	&::before {
+		position: absolute;
+		content: "Пожалуйста, заполните поле";
+		display: block;
+
+		top: -23px;
+		left: 0;
+		
+		font-size: 14px;
+		line-height: 19px;
+		color: #FF0000;
+	}
+
+	&::after {
+		position: absolute;
+		content: "*";
+		display: block;
+
+		top: 8px;
+		left: 12px;
+
+		font-size: 13px;
+		line-height: 20px;
+		
+		color: #D12136;
+	}
+}
+
+.popup__rating {
+	display: flex;
+}
+
+.popup__rating-title {
+	margin-top: 10px;
+	margin-bottom: 34px;
+
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.popup__stars-bar {
+	display: flex;
+	flex-direction: row-reverse;
+
+	width: 175px;
+	margin-top: 5px;
+	margin-left: 7px;
+}
+
+.popup__star {
+	display: block;
+
+	width: 20%;
+	height: 27px;
+	padding-left: 8px;
+
+	background-image: url("../../images/star-off.svg");
+	background-size: 27px 27px;
+	background-repeat: no-repeat;
+
+	cursor: pointer;
+
+	&:hover,
+	&:hover ~ &,
+	&:checked ~ &:hover {
+		background-image: url("../../images/star.svg");
+	}
+}
+
+.popup__star-input:checked,
+.popup__star-input:checked ~ .popup__star  {
+	background-image: url("../../images/star.svg");
+}
+
+.popup__input--comment {
+	height: 118px;
+	padding-top: 15px;
+	padding-left: 25px;
+	resize: none;
+}
+
+.popup__submit {
+	display: block;
+
+	margin: 0 auto;
+	padding: 0 19px;
+
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 52px;
+	text-align: center;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+
+	color: #FFFFFF;
+
+	background: #D12136;
+	border: none;
+}

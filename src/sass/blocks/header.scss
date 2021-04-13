@@ -1,0 +1,19 @@
+.header {
+	background-color: #F5F5F9;
+}
+
+.header-menu {
+	display: flex;
+	min-width: 1024px;
+	max-width: 1220px;
+	margin: 0 auto;
+  padding: 0 20px;
+
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+.header-menu__logo {
+	margin-left: 6px;
+	margin-top: 15px;
+}

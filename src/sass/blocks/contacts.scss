@@ -1,0 +1,44 @@
+.contacts {
+	display: flex;
+	margin-top: 25px;
+}
+
+.contacts__info {
+	display: inline-block;
+	margin: 0;
+	margin-right: 103px;
+	padding: 0;
+	list-style: none;
+}
+
+.contacts__info-item {
+	margin-bottom: 27px;
+}
+
+.contacts__title {
+	margin-bottom: 6px;
+	margin-top: 0px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	align-items: center;
+	color: #1A212F;
+
+	&--address {
+		margin-bottom: 10px;
+	}
+}
+
+.contacts__text {
+	margin: 0;
+
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	align-items: center;
+}
+
+.contacts__map {
+	margin-top: 5px;
+}

@@ -1,0 +1,36 @@
+.tabs {
+	margin-left: 5px;
+}
+
+.tabs__list {
+	display: flex;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.tabs__item {
+	width: 195px;
+
+	font-size: 20px;
+	line-height: 48px;
+	text-align: center;
+	
+	color: #48494D;
+
+	border: 1px solid #D7D9DF;
+	box-sizing: border-box;
+	cursor: pointer;
+
+	&:hover {
+    color: #fff;
+    background: #D12136;
+  }
+
+	&--active {
+		color: #fff;
+		background: #D12136;
+	}
+}
